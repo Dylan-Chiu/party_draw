@@ -17,7 +17,7 @@
             <children>
                 <ImageView fitHeight="1080" fitWidth="1920" layoutX="0" layoutY="0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image preserveRatio="false" url="@/123.png" />
+                        <Image preserveRatio="false" url="@/背景.png" />
                     </image>
                 </ImageView>
 

@@ -1,12 +1,9 @@
 package com.example.java_project2;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 
 import java.io.*;
-import java.net.URLEncoder;
 import java.util.*;
 
 public class HelloController {
@@ -17,12 +14,14 @@ public class HelloController {
 
     static private List<String> list1 = null;
     static private List<String> list2 = null;
-    static private List<String> list3 = null;
+
+    static String list1_path = "D:\\抽奖软件工作目录\\list\\list1.txt";
+    static String list2_path = "D:\\抽奖软件工作目录\\list\\list2.txt";
 
     static {
         try {
-            list1 = importList("D:\\抽奖软件工作目录\\list\\list1.txt");
-            list2 = importList("D:\\抽奖软件工作目录\\list\\list2.txt");
+            list1 = importList(list1_path);
+            list2 = importList(list2_path);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -65,8 +64,8 @@ public class HelloController {
     protected void reset() {
         welcomeText.setText("抽 奖 环 节");
         try {
-            list1 = importList("D:\\抽奖软件工作目录\\list\\list1.txt");
-            list2 = importList("D:\\抽奖软件工作目录\\list\\list2.txt");
+            list1 = importList(list1_path);
+            list2 = importList(list2_path);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
