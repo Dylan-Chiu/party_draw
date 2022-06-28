@@ -11,7 +11,7 @@
 按住第一个：抽list1的名单  
 按住第二个：抽list2的名单  
 点按第三个：重新读取名单并重置  
-#### 配合vmix软件
+#### 配合vmix软件：
 https://zhuanlan.zhihu.com/p/428146012
 ### 三、其他
 若要打包软件，使用  javafxpackager  
