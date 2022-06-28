@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.example.java_project2.WhileButton?>
+<?import javafx.scene.effect.Bloom?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_project2.HelloController">
+    <padding>
+        <Insets bottom="0" left="0" right="0" top="0" />
+    </padding>
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="/main.css">
+            <children>
+                <ImageView fitHeight="1080" fitWidth="1920" layoutX="0" layoutY="0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image preserveRatio="false" url="@/123.png" />
+                    </image>
+                </ImageView>
+
+                <Label fx:id="welcomeText" alignment="CENTER" layoutX="0" layoutY="0" prefHeight="1000" prefWidth="1920" text="抽 奖 环 节" textFill="#ffffff"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font fx:id="result" size="80" name="黑体"  />
+                    </font>
+                    <effect>
+                        <Bloom />
+                    </effect>
+                </Label>
+                <WhileButton layoutX="0" minWidth="100" layoutY="1080"  onAction="#onStartList1" text="" visible="true" />
+                <WhileButton layoutX="100" minWidth="100" layoutY="1080" onAction="#onStartList2" text="" visible="true" />
+                <Button layoutX="200" minWidth="100" layoutY="1080" onAction="#reset" text="" visible="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
